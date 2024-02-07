@@ -1,0 +1,63 @@
+/* App.css */
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Calculator container */
+.calculator {
+  max-width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Display styles */
+.display {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.display input[type='text'] {
+  width: calc(100% - 20px);
+  margin-bottom: 5px;
+  border: none;
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+.display span {
+  display: block;
+  font-size: 1.5rem;
+  text-align: right;
+}
+
+/* Button styles */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Changed to grid of four columns */
+  gap: 15px;
+}
+
+.buttons button {
+  padding: 20px; /* Increased button padding */
+  font-size: 1.5rem; /* Increased font size */
+  border: none;
+  border-radius: 5px;
+  height: 70px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s; /* Added transition for hover effect */
+}
+
+.buttons button:hover {
+  background-color: #0056b3; /* Changed hover background color */
+}
