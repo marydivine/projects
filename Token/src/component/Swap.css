@@ -1,0 +1,289 @@
+body {
+    background-color:  #0e111b; /* Set the background color of the body */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+     overflow: hidden;
+  }
+.swap-container {
+    background-color: #0e111b;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+   
+  }
+  
+  .swap-header {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    margin-left: 32px;
+    background-color: #0E111B;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+    background-color: #374151;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    
+  }
+  
+  .input-field {
+    /* background-color: transparent;
+    color: #ffffff; */
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    outline: none;
+  }
+ 
+  .swap-icon {
+    background-color: #3a4157;
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 8px;
+    position: absolute;
+    top: 240px;
+    left: 620px;
+    color: #5F6783;
+    border: 3px solid #0E111B;
+    font-size: 12px;
+    transition: 0.3s
+  }
+  
+  .swap-button {
+    background-color: #374151;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .swap-button:hover {
+    cursor: pointer;
+  background-color: #374151;
+  }
+  /* Swap.css */
+
+/* Header styles */
+.header {
+  display: flex; /* Make the header a flex container */
+  justify-content: space-between; /* Align items with space between */
+  align-items: center; /* Center items vertically */
+  padding: 10px 20px; /* Add padding */
+}
+
+/* Left side of the header */
+.header-left {
+  display: flex; /* Make this section a flex container */
+}
+
+/* Right side of the header */
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+/* Header titles */
+.header-title {
+  margin-right: 30px; /* Add spacing between titles */
+  font-weight: bold; /* Add bold font weight */
+}
+
+/* Ethereum text */
+.header-ethereum {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+/* Connect button */
+.connect-button {
+    background-color: #243056; 
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 100px;
+    /* color: #5981F3; */
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Connect button hover effect */
+.connect-button:hover {
+  background-color: #0056b3; /* Darker background color on hover */
+}
+
+.tab-container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+.paper-container{
+    width: 400px;
+  background-color: #0E111B;
+  /* border: 2px solid #21273a; */
+  min-height: 300px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 400px;
+  margin-top: 50px;
+}
+.ethereum-logo {
+  width: 30px; /* Adjust the size as needed */
+  height: auto; /* Adjust the size as needed */
+  border-radius: 50%;
+  margin-right: 10px; /* Adjust the spacing as needed */
+}
+.ant-select-item-option-selected {
+  background-color: #374151 !important; /* Set background color and force importance */
+  color: white; /* Set text color */
+}
+/* Mobile view styles */
+/* Overall phone layout */
+@media only screen and (max-width: 600px) {
+  body {
+    font-family: sans-serif;
+  }
+
+  .swap-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px 15px; */
+  }
+
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-title {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .header-right {
+    display: flex;
+  }
+
+  .header-ethereum {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    margin-bottom: 1px;
+  }
+
+  .header-ethereum img {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+  }
+  .ant-select-item-option-selected {
+    background-color: #374151 !important; /* Set background color and force importance */
+    color: white; /* Set text color */
+  }
+  .connect-button {
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-bottom: 3px;
+  }
+
+  .paper-container {
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    /* margin-right: 50px; */
+  }
+
+  .swap-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-container {
+    display: flex;
+    /* justify-content: space-between; */
+    width: 97%;
+    margin-bottom: 10px;
+    background-color: #374151;
+  }
+
+  .input-field,
+  .MuiSelect-select {
+    width: 58%;
+    font-size: 14px;
+    padding: 5px 10px;
+    /* border: 1px solid #e0e0e0; */
+    border-radius: 5px;
+  }
+
+  .swap-icon {
+
+      background-color: #3a4157;
+      width: 25px;
+      height: 25px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      border-radius: 8px;
+      /* position: absolute; */
+      top: 200px;
+      left: 200px;
+      color: #5F6783;
+      border: 3px solid #0E111B;
+      font-size: 12px;
+      transition: 0.3s
+    }
+    .swap-button {
+      background-color: #374151;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-left: 20px;
+
+    }
+  
+    .swap-button:hover {
+      background-color: #0069d9;
+    }
+  
+  }
+
+ 

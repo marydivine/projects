@@ -1,0 +1,31 @@
+.Flex{
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.Image-container{
+    background-color: #FFF4F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+
+.Form-container{
+    width: 50vw;
+    position: relative;
+}
+
+.formContainer{
+    position: relative;
+    padding: 5rem;
+}
+
+
+form input[type='email'], input[type='password'], .button{
+    width: 100%;
+    position: relative;
+   
+}
